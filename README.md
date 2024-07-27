@@ -11,21 +11,21 @@ Este projeto entrega uma solução simples de observabilidade usando:
 
 ### Build da aplicação sample (python-app)
 
-docker tag python-app:latest <your-registry>/python-app:latest
-docker push <your-registry>/python-app:latest
+* docker tag python-app:latest <your-registry>/python-app:latest
+* docker push <your-registry>/python-app:latest
 
 ### Deploy
 
-kubectl create -f (deployment.yaml)
+* kubectl create -f (deployment.yaml)
 
 ### Acesso local
 
-kubectl port-forward svc/prometheus 9090:9090
-kubectl port-forward svc/grafana 3000:3000
+* kubectl port-forward svc/prometheus 9090:9090
+* kubectl port-forward svc/grafana 3000:3000
 
 ### Infra
 
-Minikube
+* Minikube
 
 # Dependências
 
